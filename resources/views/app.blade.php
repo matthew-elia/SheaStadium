@@ -28,19 +28,31 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#">Laravel</a>
+				<a class="navbar-brand" href="/">Live @ Shea Stadium BK</a>
 			</div>
 
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav">
-					<li><a href="/">Home</a></li>
+					<li><a href="#">Dates</a></li>
+					<li><a href="#">Archives</a></li>
+					<li><a href="#">Contact</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Studio</a></li>
+					<li><a href="#">Merch</a></li>
 				</ul>
-
 				<ul class="nav navbar-nav navbar-right">
 					@if (Auth::guest())
 						<li><a href="/auth/login">Login</a></li>
 						<li><a href="/auth/register">Register</a></li>
 					@else
+					<form class="navbar-form pull-left visible-lg" role="search">
+				        <div class="form-group">
+				        <label>Mailing List&nbsp;
+				          <input type="text" class="form-control" placeholder="Email Address">
+				        </label>
+				        </div>
+			          	<button type="submit" class="btn btn-default">Subscribe</button>
+			        </form>
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{{ Auth::user()->name }} <span class="caret"></span></a>
 							<ul class="dropdown-menu" role="menu">
@@ -54,6 +66,47 @@
 	</nav>
 
 	@yield('content')
+
+	<footer>
+		<div class="container-fluid" style="margin:80px 0px">
+			<div class="row">
+				<div class="col-md-4">
+					<p>Live @ Shea Stadium BK<br>
+					20 Meadow St.<br>
+					Brooklyn, NY, 11206<br>                  
+					<a>Map It</a>
+					</p>
+					<p>
+					Shea Stadium BK is a recording studio/space dedicated to documenting live performances. <br>
+					Check out our tracks, recorded live and uploaded to soundcloud</p>
+				</div>
+				<div class="col-md-4">
+					<div class="page-header">
+						<h6 class="pull-left">Tweets</h6>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="row text-center">
+						<div class="col-md-6">
+							<h6><a href="">Home</a></h6>
+							<h6><a href="">Dates</a></h6>
+							<h6><a href="">Bands</a></h6>
+							<h6><a href="">Contact</a></h6>
+							<h6><a href="">About</a></h6>
+						</div>
+						<div class="col-md-6">
+							<h6><a href="">Shea Du Jour</a></h6>
+							<h6><a href="">Guest Lists</a></h6>
+							<h6><a href="">Facebook</a></h6>
+							<h6><a href="">Twitter</a></h6>
+							<h6><a href="">Tumblr</a></h6>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
 
 	<!-- Scripts -->
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
