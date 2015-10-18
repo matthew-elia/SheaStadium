@@ -13,11 +13,13 @@
 	.fam-and-friends-section {
 		margin:40px 0px;
 	}
+
 </style>
 
 <div class="container">
 
 	<div class="col-md-9">
+
 		<div class="about-section">
 			<div class="row">
 				<h1>About</h1>
@@ -28,6 +30,7 @@
 				</p>
 			</div>
 		</div>
+
 		<div class="press-section">
 			<div class="row">
 				<h1>Press</h1>
@@ -45,6 +48,7 @@
 				</ul>
 			</div>
 		</div>
+
 		<div class="fam-and-friends-section">
 			<div class="row">
 				<h1>Family & Friends</h1>
@@ -70,6 +74,7 @@
 				</ul>
 			</div>
 		</div>
+		
 	</div>
 
 	<!-- ARCHIVES PANEL -->
