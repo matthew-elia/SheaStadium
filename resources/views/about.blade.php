@@ -16,9 +16,10 @@
 </style>
 
 <div class="container">
-	<div class="row">
-		<div class="col-md-9">
-			<div class="about-section">
+
+	<div class="col-md-9">
+		<div class="about-section">
+			<div class="row">
 				<h1>About</h1>
 				<p>Shea Stadium BK is a recording studio/all ages space dedicated to documenting live performances.<br><br>
 				Formed in the spring of 2009 by a couple of native Brooklynites, Live @ Shea Stadium has already amassed an archive of well over 1,000 sets by hundreds of different bands and artists from all over the globe. Since its inception, the mission was to create an environment that would function as a recording studio and rehearsal space by day, and by night a space that would capture and later share its live performances– each session contributing to an infinite aural documentary of live contemporary music. Unlike many other sources for recorded music, nearly all of the artists in the archive are current, active, living, breathing entities, making relevant independent music that deserves to be heard and is in need of support. In 2011, after a recording a year and a half’s worth of sessions, www.liveatsheastadium.com was launched for this purpose– a site which regularly updates and archives handpicked highlights from the past week at the space.<br><br>
@@ -26,7 +27,9 @@
 				In an era in which the live album as a commodity is virtually dead, and free recorded music is available at every turn, this site hopes to fill a void as a rare resource for free live music. All of the recorded performances on this site are unique and cannot be found anywhere else. For those who ever bought or collected bootlegs of their favorite bands or of shows that they have attended, the archives in that same way are meant to preserve a specific moment in time that can never be recreated. For those who never cared about that sort of thing, it is a resource for discovering and sharing new music, and in some cases a tool for charting the growth of a lot of the local and touring bands that have passed through our space on several occasions, whether it was weeks, months or years apart. Although these recordings for the time being are for streaming only, listeners should feel free to share them with whomever they wish. Ultimately, it is for this reason that archives exist– as a way of giving back to a musical landscape that has for years, built itself on a strong sense of community.
 				</p>
 			</div>
-			<div class="press-section">
+		</div>
+		<div class="press-section">
+			<div class="row">
 				<h1>Press</h1>
 				<ul class="list-unstyled">
 					<li><a href="http://www.nytimes.com/2012/08/19/nyregion/at-the-other-shea-stadium-in-east-williamsburg-music-and-mosh-pits.html">Playing At Shea, Not The Mets</a> - New York Times</li>
@@ -41,7 +44,9 @@
 					<li><a href="www.paris-newyork.tv/shea-stadium-le-new-york-underground/">Shea Stadium, le New York musical underground</a> - Paris New York TV</li>
 				</ul>
 			</div>
-			<div class="fam-and-friends-section">
+		</div>
+		<div class="fam-and-friends-section">
+			<div class="row">
 				<h1>Family & Friends</h1>
 				<p>This project would also not be possible if not for the support and inspiration of the following. Respect their endeavors:</p>
 				<ul class="list-unstyled">
@@ -65,8 +70,11 @@
 				</ul>
 			</div>
 		</div>
-		<div class="col-md-3"></div>
 	</div>
+
+	<!-- ARCHIVES PANEL -->
+	<div class="col-md-3"></div>
+
 </div>
 
 	
