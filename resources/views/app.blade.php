@@ -31,8 +31,11 @@
 		color:white !important;
 	}
 	.container {
-		background-color: black;
+		background-color: rgba(0,0,0,0.8);
 		color:white;
+	}
+	footer {
+		margin:40px 0px;
 	}
 
 	</style>
@@ -86,8 +89,8 @@
 
 	@yield('content')
 
-	<footer class="text-center">
-		<div class="container">
+	<div class="container" style="border-top: 2px solid white;">
+		<footer>
 			<div class="row">
 				<div class="col-md-4">
 					<p>Live @ Shea Stadium BK<br>
@@ -124,8 +127,8 @@
 					</div>
 				</div>
 			</div>
-		</div>
-	</footer>
+		</footer>
+	</div>
 
 	<!-- Scripts -->
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
