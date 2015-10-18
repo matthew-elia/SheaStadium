@@ -15,6 +15,18 @@ Route::get('/', 'WelcomeController@index');
 
 Route::get('home', 'HomeController@index');
 
+Route::get('dates', 'DatesController@index');
+
+Route::get('archives', 'ArchivesController@index');
+
+Route::get('contact', 'ContactController@index');
+
+Route::get('about', 'AboutController@index');
+
+Route::get('studio', 'StudioController@index');
+
+Route::get('merch', 'MerchController@index');
+
 Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',

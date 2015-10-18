@@ -33,12 +33,12 @@
 
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav">
-					<li><a href="#">Dates</a></li>
-					<li><a href="#">Archives</a></li>
-					<li><a href="#">Contact</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Studio</a></li>
-					<li><a href="#">Merch</a></li>
+					<li><a href="/dates">Dates</a></li>
+					<li><a href="/archives">Archives</a></li>
+					<li><a href="/contact">Contact</a></li>
+					<li><a href="/about">About</a></li>
+					<li><a href="/studio">Studio</a></li>
+					<li><a href="/merch">Merch</a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
 					@if (Auth::guest())
