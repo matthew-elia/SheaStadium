@@ -17,10 +17,29 @@
 		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
+	<style>
+
+	body {
+		background: url( {{ asset('/images/home-bg.jpg') }});
+	}
+	nav.navbar.navbar-default {
+		margin-bottom: 0px;
+		background-color: rgba(0,0,0,0);
+		border:none;
+	}
+	p,a {
+		color:white !important;
+	}
+	.container {
+		background-color: black;
+		color:white;
+	}
+
+	</style>
 </head>
 <body>
 	<nav class="navbar navbar-default">
-		<div class="container-fluid">
+		<div class="container">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 					<span class="sr-only">Toggle Navigation</span>
@@ -67,8 +86,8 @@
 
 	@yield('content')
 
-	<footer>
-		<div class="container-fluid" style="margin:80px 0px">
+	<footer class="text-center">
+		<div class="container">
 			<div class="row">
 				<div class="col-md-4">
 					<p>Live @ Shea Stadium BK<br>
