@@ -34,7 +34,7 @@ class ContactController extends Controller {
 	 */
 	public function store()
 	{
-		//
+		return view('contact');
 	}
 
 	/**

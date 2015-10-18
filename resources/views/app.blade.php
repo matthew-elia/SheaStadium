@@ -27,12 +27,11 @@
 		background-color: rgba(0,0,0,0);
 		border:none;
 	}
-	p,a {
+	h1,p,a,label {
 		color:white !important;
 	}
 	.container {
 		background-color: rgba(0,0,0,0.8);
-		color:white;
 	}
 	footer {
 		margin:40px 0px;

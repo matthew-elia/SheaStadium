@@ -20,6 +20,7 @@ Route::get('dates', 'DatesController@index');
 Route::get('archives', 'ArchivesController@index');
 
 Route::get('contact', 'ContactController@index');
+Route::get('post', 'ContactController@store');
 
 Route::get('about', 'AboutController@index');
 
