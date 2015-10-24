@@ -3,6 +3,7 @@
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
+use \App\Band as Band;
 use Illuminate\Http\Request;
 
 class ArchivesController extends Controller {
@@ -14,7 +15,8 @@ class ArchivesController extends Controller {
 	 */
 	public function index()
 	{
-		return view('archives');
+		$bands = Band::orderBy('band_name', 'ASC')->get();
+		return view('archives')->with('bands', $bands);
 	}
 
 	/**
