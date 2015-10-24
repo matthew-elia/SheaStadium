@@ -3,6 +3,7 @@
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
+use App\Date as Date;
 use Illuminate\Http\Request;
 
 class DatesController extends Controller {
@@ -14,7 +15,9 @@ class DatesController extends Controller {
 	 */
 	public function index()
 	{
-		return view('dates');
+		$dates = Date::orderBy('post_date', 'DESC')->get();
+		// dd($dates);
+		return view('dates')->with('dates', $dates);
 	}
 
 	/**
