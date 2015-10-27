@@ -3,6 +3,7 @@
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
+use Carbon\Carbon as Carbon;
 use App\Show as Show;
 use Illuminate\Http\Request;
 
@@ -16,6 +17,8 @@ class ShowsController extends Controller {
 	public function index()
 	{
 		$shows = Show::orderBy('post_date', 'DESC')->paginate(15);
+		$now = Carbon::now();
+		dd($now);
 		return view('shows')->with('shows', $shows);
 	}
 
