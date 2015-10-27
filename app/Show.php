@@ -2,8 +2,8 @@
 
 use Illuminate\Database\Eloquent\Model;
 
-class Date extends Model {
+class Show extends Model {
 
-	protected $table = 'dates';
+	protected $table = 'shows';
 
 }

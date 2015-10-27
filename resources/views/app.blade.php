@@ -18,9 +18,11 @@
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
 	<style>
-
+	html, body {
+		height: 100%;
+	}
 	body {
-		background: url( {{ asset('/images/home-bg.jpg') }});
+		background: url( {{ asset('/images/home-bg.jpg') }}) top left no-repeat fixed;
 	}
 	nav.navbar.navbar-default {
 		margin-bottom: 0px;
@@ -32,6 +34,12 @@
 	}
 	.container {
 		background-color: rgba(0,0,0,0.8);
+	}
+	#content-wrapper {
+		position:static;
+		top:50px;
+		bottom:0;
+		overflow-y:scroll;
 	}
 	footer {
 		margin:40px 0px;
@@ -49,12 +57,12 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="/">Live @ Shea Stadium BK</a>
+				<a class="navbar-brand" href="/home">Live @ Shea Stadium BK</a>
 			</div>
 
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav">
-					<li><a href="/dates">Dates</a></li>
+					<li><a href="/shows">Shows</a></li>
 					<li><a href="/archives">Archives</a></li>
 					<li><a href="/contact">Contact</a></li>
 					<li><a href="/about">About</a></li>

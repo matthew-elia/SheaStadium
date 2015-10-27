@@ -15,7 +15,7 @@ Route::get('/', 'WelcomeController@index');
 
 Route::get('home', 'HomeController@index');
 
-Route::get('dates', 'DatesController@index');
+Route::get('shows', 'ShowsController@index');
 
 Route::get('archives', 'ArchivesController@index');
 

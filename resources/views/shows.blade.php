@@ -4,10 +4,10 @@
 
 <div class="container">
 	<ul class="list-unstyled">
-		@foreach($dates as $d)
-			@if($d->post_content != "")
+		@foreach($shows as $s)
+			@if($s->post_content != "")
 			<div class="well">
-				<li><h2>{{ $d->post_title }}</h2></li>
+				<li><h2>{{ $s->post_title }}</h2></li>
 			</div>
 			@endif
 		@endforeach

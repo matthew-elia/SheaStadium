@@ -3,10 +3,10 @@
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
-use App\Date as Date;
+use App\Show as Show;
 use Illuminate\Http\Request;
 
-class DatesController extends Controller {
+class ShowsController extends Controller {
 
 	/**
 	 * Display a listing of the resource.
@@ -15,9 +15,8 @@ class DatesController extends Controller {
 	 */
 	public function index()
 	{
-		$dates = Date::orderBy('post_date', 'DESC')->get();
-		// dd($dates);
-		return view('dates')->with('dates', $dates);
+		$shows = Show::orderBy('post_date', 'DESC')->get();
+		return view('shows')->with('shows', $shows);
 	}
 
 	/**
