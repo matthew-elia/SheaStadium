@@ -15,7 +15,7 @@ class ShowsController extends Controller {
 	 */
 	public function index()
 	{
-		$shows = Show::orderBy('post_date', 'DESC')->get();
+		$shows = Show::orderBy('post_date', 'DESC')->paginate(15);
 		return view('shows')->with('shows', $shows);
 	}
 

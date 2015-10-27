@@ -29,7 +29,7 @@
 		background-color: rgba(0,0,0,0);
 		border:none;
 	}
-	h1,p,a,label {
+	h1,h2,h3,h4,h5,h6,p,a,label {
 		color:white !important;
 	}
 	.container {
@@ -42,14 +42,15 @@
 		overflow-y:scroll;
 	}
 	footer {
-		margin:40px 0px;
+		padding:40px 0px;
+		background:rgba(0,0,0,1);
 	}
 
 	</style>
 </head>
 <body>
 	<nav class="navbar navbar-default">
-		<div class="container">
+		<div class="container" style="background-color:rgba(0,0,0,1);border-bottom:2px solid white;">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 					<span class="sr-only">Toggle Navigation</span>
@@ -96,7 +97,7 @@
 
 	@yield('content')
 
-	<div class="container" style="border-top: 2px solid white;">
+	<div class="container" style="border-top: 2px solid white;background:rgba(0,0,0,1);">
 		<footer>
 			<div class="row">
 				<div class="col-md-4">
@@ -110,9 +111,8 @@
 					Check out our tracks, recorded live and uploaded to soundcloud</p>
 				</div>
 				<div class="col-md-4">
-					<div class="page-header">
-						<h6 class="pull-left">Tweets</h6>
-						<div class="clearfix"></div>
+					<div class="page-header" style="margin-top:0;">
+						<p>Tweets</p>
 					</div>
 				</div>
 				<div class="col-md-4">
