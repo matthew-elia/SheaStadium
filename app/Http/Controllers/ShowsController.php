@@ -19,32 +19,20 @@ class ShowsController extends Controller {
 	{	
 		$show_title;
 		$show_data = [];
-		$show_details = [];
-		$show_metadata = [];
+		$show_data_array = [];
 
 		$shows = Show::orderBy('post_date', 'DESC')->take(5)->get();
+		
 		for ($i=0; $i < sizeof($shows) ; $i++) { 
-			$show_data = $shows[$i]->meta->toArray();
+			$show_data = $shows[$i]->meta;
+			$show_data_array = explode(',', $show_data);
 		}
-		for ($x=0; $x < sizeof($show_data) ; $x++) { 	
-			$show = Show::find($show_data[$x]['show_id'])->first();
-
-			$show_data[$x]= array($show_data[$x]['meta_key'] => $show_data[$x]['meta_value']);
-			array_merge($show_data[$x]);
-			
-			$show_id = $show['attributes']['id'];
-			$show_title = $show['attributes']['show_title'];
-		}
-
-		// for ($y=0; $y < sizeof($show_data) ; $y++) {
-
-		// }
 		
 		// DATES
 		$today = Carbon::today()->formatLocalized('%A %B %d');
 		$yesterday = Carbon::now()->subDay()->formatLocalized('%A %B %d');
 
-		return view('shows')->with(compact('shows', 'show_metadata', 'today', 'yesterday'));
+		return view('shows')->with(compact('shows', 'show_data', 'show_data_array', 'today', 'yesterday'));
 	}
 
 	/**
