@@ -17,22 +17,13 @@ class ShowsController extends Controller {
 	 */
 	public function index()
 	{	
-		$show_title;
-		$show_data = [];
-		$show_data_array = [];
-
 		$shows = Show::orderBy('post_date', 'DESC')->simplePaginate(10);
-		
-		for ($i=0; $i < sizeof($shows) ; $i++) { 
-			$show_data = $shows[$i]->meta;
-			$show_data_array = explode(',', $show_data);
-		}
 		
 		// DATES
 		$today = Carbon::today()->formatLocalized('%A %B %d');
 		$yesterday = Carbon::now()->subDay()->formatLocalized('%A %B %d');
 
-		return view('shows')->with(compact('shows', 'show_data', 'show_data_array', 'today', 'yesterday'));
+		return view('shows')->with(compact('shows', 'today', 'yesterday'));
 	}
 
 	/**
