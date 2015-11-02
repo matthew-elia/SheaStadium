@@ -21,7 +21,7 @@ class ShowsController extends Controller {
 		$show_data = [];
 		$show_data_array = [];
 
-		$shows = Show::orderBy('post_date', 'DESC')->paginate(10);
+		$shows = Show::orderBy('post_date', 'DESC')->simplePaginate(10);
 		
 		for ($i=0; $i < sizeof($shows) ; $i++) { 
 			$show_data = $shows[$i]->meta;
