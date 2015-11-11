@@ -17,7 +17,7 @@ class ShowsController extends Controller {
 	 */
 	public function index()
 	{	
-		$shows = Show::orderBy('post_date', 'DESC')->simplePaginate(10);
+		$shows = Show::orderBy('post_date', 'DESC')->simplePaginate(5);
 		
 		// DATES
 		$today = Carbon::today()->formatLocalized('%A %B %d');
