@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use \App\Band as Band;
 use Illuminate\Http\Request;
 
-class ArchivesController extends Controller {
+class BandsController extends Controller {
 
 	/**
 	 * Display a listing of the resource.
@@ -16,7 +16,19 @@ class ArchivesController extends Controller {
 	public function index()
 	{
 		$bands = Band::orderBy('post_title', 'ASC')->get();
-		return view('archives')->with(compact('bands'));
+		return view('bands')->with(compact('bands'));
+	}
+
+	/**
+	 * Display a listing of the resource.
+	 *
+	 * @return Response
+	 */
+	public function show_band_page($id)
+	{
+		$band = Band::findOrFail($id);
+		// dd($band);
+		return view('bands.band-page')->with(compact('band'));
 	}
 
 	/**

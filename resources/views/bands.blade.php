@@ -28,7 +28,7 @@
 					<ul class="unstyled-list">
 						@foreach($bands as $b)
 							@if(substr($b->post_title[0], 0, 1) === 'A')
-						<li class="col-md-4"><p>{{ $b->post_title }}</p></li>
+						<li class="col-md-4"><a href="bands/band-page/{{ $b->ID }}">{{ $b->post_title }}</a></li>
 							@endif
 						@endforeach
 					</ul>
@@ -43,7 +43,7 @@
 				<ul class="unstyled-list">
 					@foreach($bands as $b)
 						@if(substr($b->post_title[0], 0, 1) === 'B')
-					<li class="col-md-4"><p>{{ $b->post_title }}</p></li>
+					<li class="col-md-4"><a href="bands/band-page/{{ $b->ID }}">{{ $b->post_title }}</a></li>
 						@endif
 					@endforeach
 				</ul>
@@ -57,7 +57,7 @@
 				<ul class="unstyled-list">
 					@foreach($bands as $b)
 						@if(substr($b->post_title[0], 0, 1) === 'C')
-					<li class="col-md-4"><p>{{ $b->post_title }}</p></li>
+					<li class="col-md-4"><a href="bands/band-page/{{ $b->ID }}">{{ $b->post_title }}</a></li>
 						@endif
 					@endforeach
 				</ul>
@@ -71,7 +71,7 @@
 				<ul class="unstyled-list">
 					@foreach($bands as $b)
 						@if(substr($b->post_title[0], 0, 1) === 'D')
-					<li class="col-md-4"><p>{{ $b->post_title }}</p></li>
+					<li class="col-md-4"><a href="bands/band-page/{{ $b->ID }}">{{ $b->post_title }}</a></li>
 						@endif
 					@endforeach
 				</ul>
@@ -85,7 +85,7 @@
 				<ul class="unstyled-list">
 					@foreach($bands as $b)
 						@if(substr($b->post_title[0], 0, 1) === 'E')
-					<li class="col-md-4"><p>{{ $b->post_title }}</p></li>
+					<li class="col-md-4"><a href="bands/band-page/{{ $b->ID }}">{{ $b->post_title }}</a></li>
 						@endif
 					@endforeach
 				</ul>
@@ -99,7 +99,7 @@
 				<ul class="unstyled-list">
 					@foreach($bands as $b)
 						@if(substr($b->post_title[0], 0, 1) === 'F')
-					<li class="col-md-4"><p>{{ $b->post_title }}</p></li>
+					<li class="col-md-4"><a href="bands/band-page/{{ $b->ID }}">{{ $b->post_title }}</a></li>
 						@endif
 					@endforeach
 				</ul>
@@ -113,7 +113,7 @@
 				<ul class="unstyled-list">
 					@foreach($bands as $b)
 						@if(substr($b->post_title[0], 0, 1) === 'G')
-					<li class="col-md-4"><p>{{ $b->post_title }}</p></li>
+					<li class="col-md-4"><a href="bands/band-page/{{ $b->ID }}">{{ $b->post_title }}</a></li>
 						@endif
 					@endforeach
 				</ul>
@@ -127,7 +127,7 @@
 				<ul class="unstyled-list">
 					@foreach($bands as $b)
 						@if(substr($b->post_title[0], 0, 1) === 'H')
-					<li class="col-md-4"><p>{{ $b->post_title }}</p></li>
+					<li class="col-md-4"><a href="bands/band-page/{{ $b->ID }}">{{ $b->post_title }}</a></li>
 						@endif
 					@endforeach
 				</ul>
@@ -141,7 +141,7 @@
 				<ul class="unstyled-list">
 					@foreach($bands as $b)
 						@if(substr($b->post_title[0], 0, 1) === 'I')
-					<li class="col-md-4"><p>{{ $b->post_title }}</p></li>
+					<li class="col-md-4"><a href="bands/band-page/{{ $b->ID }}">{{ $b->post_title }}</a></li>
 						@endif
 					@endforeach
 				</ul>
@@ -155,7 +155,7 @@
 				<ul class="unstyled-list">
 					@foreach($bands as $b)
 						@if(substr($b->post_title[0], 0, 1) === 'J')
-					<li class="col-md-4"><p>{{ $b->post_title }}</p></li>
+					<li class="col-md-4"><a href="bands/band-page/{{ $b->ID }}">{{ $b->post_title }}</a></li>
 						@endif
 					@endforeach
 				</ul>
@@ -169,7 +169,7 @@
 				<ul class="unstyled-list">
 					@foreach($bands as $b)
 						@if(substr($b->post_title[0], 0, 1) === 'K')
-					<li class="col-md-4"><p>{{ $b->post_title }}</p></li>
+					<li class="col-md-4"><a href="bands/band-page/{{ $b->ID }}">{{ $b->post_title }}</a></li>
 						@endif
 					@endforeach
 				</ul>
@@ -183,7 +183,7 @@
 				<ul class="unstyled-list">
 					@foreach($bands as $b)
 						@if(substr($b->post_title[0], 0, 1) === 'L')
-					<li class="col-md-4"><p>{{ $b->post_title }}</p></li>
+					<li class="col-md-4"><a href="bands/band-page/{{ $b->ID }}">{{ $b->post_title }}</a></li>
 						@endif
 					@endforeach
 				</ul>
@@ -197,7 +197,7 @@
 				<ul class="unstyled-list">
 					@foreach($bands as $b)
 						@if(substr($b->post_title[0], 0, 1) === 'M')
-					<li class="col-md-4"><p>{{ $b->post_title }}</p></li>
+					<li class="col-md-4"><a href="bands/band-page/{{ $b->ID }}">{{ $b->post_title }}</a></li>
 						@endif
 					@endforeach
 				</ul>
@@ -211,7 +211,7 @@
 				<ul class="unstyled-list">
 					@foreach($bands as $b)
 						@if(substr($b->post_title[0], 0, 1) === 'N')
-					<li class="col-md-4"><p>{{ $b->post_title }}</p></li>
+					<li class="col-md-4"><a href="bands/band-page/{{ $b->ID }}">{{ $b->post_title }}</a></li>
 						@endif
 					@endforeach
 				</ul>
@@ -225,7 +225,7 @@
 				<ul class="unstyled-list">
 					@foreach($bands as $b)
 						@if(substr($b->post_title[0], 0, 1) === 'O')
-					<li class="col-md-4"><p>{{ $b->post_title }}</p></li>
+					<li class="col-md-4"><a href="bands/band-page/{{ $b->ID }}">{{ $b->post_title }}</a></li>
 						@endif
 					@endforeach
 				</ul>
@@ -239,7 +239,7 @@
 				<ul class="unstyled-list">
 					@foreach($bands as $b)
 						@if(substr($b->post_title[0], 0, 1) === 'P')
-					<li class="col-md-4"><p>{{ $b->post_title }}</p></li>
+					<li class="col-md-4"><a href="bands/band-page/{{ $b->ID }}">{{ $b->post_title }}</a></li>
 						@endif
 					@endforeach
 				</ul>
@@ -253,7 +253,7 @@
 				<ul class="unstyled-list">
 					@foreach($bands as $b)
 						@if(substr($b->post_title[0], 0, 1) === 'Q')
-					<li class="col-md-4"><p>{{ $b->post_title }}</p></li>
+					<li class="col-md-4"><a href="bands/band-page/{{ $b->ID }}">{{ $b->post_title }}</a></li>
 						@endif
 					@endforeach
 				</ul>
@@ -267,7 +267,7 @@
 				<ul class="unstyled-list">
 					@foreach($bands as $b)
 						@if(substr($b->post_title[0], 0, 1) === 'R')
-					<li class="col-md-4"><p>{{ $b->post_title }}</p></li>
+					<li class="col-md-4"><a href="bands/band-page/{{ $b->ID }}">{{ $b->post_title }}</a></li>
 						@endif
 					@endforeach
 				</ul>
@@ -281,7 +281,7 @@
 				<ul class="unstyled-list">
 					@foreach($bands as $b)
 						@if(substr($b->post_title[0], 0, 1) === 'S')
-					<li class="col-md-4"><p>{{ $b->post_title }}</p></li>
+					<li class="col-md-4"><a href="bands/band-page/{{ $b->ID }}">{{ $b->post_title }}</a></li>
 						@endif
 					@endforeach
 				</ul>
@@ -295,7 +295,7 @@
 				<ul class="unstyled-list">
 					@foreach($bands as $b)
 						@if(substr($b->post_title[0], 0, 1) === 'T')
-					<li class="col-md-4"><p>{{ $b->post_title }}</p></li>
+					<li class="col-md-4"><a href="bands/band-page/{{ $b->ID }}">{{ $b->post_title }}</a></li>
 						@endif
 					@endforeach
 				</ul>
@@ -309,7 +309,7 @@
 				<ul class="unstyled-list">
 					@foreach($bands as $b)
 						@if(substr($b->post_title[0], 0, 1) === 'U')
-					<li class="col-md-4"><p>{{ $b->post_title }}</p></li>
+					<li class="col-md-4"><a href="bands/band-page/{{ $b->ID }}">{{ $b->post_title }}</a></li>
 						@endif
 					@endforeach
 				</ul>
@@ -323,7 +323,7 @@
 				<ul class="unstyled-list">
 					@foreach($bands as $b)
 						@if(substr($b->post_title[0], 0, 1) === 'V')
-					<li class="col-md-4"><p>{{ $b->post_title }}</p></li>
+					<li class="col-md-4"><a href="bands/band-page/{{ $b->ID }}">{{ $b->post_title }}</a></li>
 						@endif
 					@endforeach
 				</ul>
@@ -337,7 +337,7 @@
 				<ul class="unstyled-list">
 					@foreach($bands as $b)
 						@if(substr($b->post_title[0], 0, 1) === 'W')
-					<li class="col-md-4"><p>{{ $b->post_title }}</p></li>
+					<li class="col-md-4"><a href="bands/band-page/{{ $b->ID }}">{{ $b->post_title }}</a></li>
 						@endif
 					@endforeach
 				</ul>
@@ -351,7 +351,7 @@
 				<ul class="unstyled-list">
 					@foreach($bands as $b)
 						@if(substr($b->post_title[0], 0, 1) === 'X')
-					<li class="col-md-4"><p>{{ $b->post_title }}</p></li>
+					<li class="col-md-4"><a href="bands/band-page/{{ $b->ID }}">{{ $b->post_title }}</a></li>
 						@endif
 					@endforeach
 				</ul>
@@ -365,7 +365,7 @@
 				<ul class="unstyled-list">
 					@foreach($bands as $b)
 						@if(substr($b->post_title[0], 0, 1) === 'Y')
-					<li class="col-md-4"><p>{{ $b->post_title }}</p></li>
+					<li class="col-md-4"><a href="bands/band-page/{{ $b->ID }}">{{ $b->post_title }}</a></li>
 						@endif
 					@endforeach
 				</ul>
@@ -379,7 +379,7 @@
 				<ul class="unstyled-list">
 					@foreach($bands as $b)
 						@if(substr($b->post_title[0], 0, 1) === 'Z')
-					<li class="col-md-4"><p>{{ $b->post_title }}</p></li>
+					<li class="col-md-4"><a href="bands/band-page/{{ $b->ID }}">{{ $b->post_title }}</a></li>
 						@endif
 					@endforeach
 				</ul>
@@ -394,7 +394,7 @@
 					<ul class="unstyled-list">
 						@foreach($bands as $b)
 							@if(is_numeric(substr($b->post_title[0], 0, 1)))
-						<li class="col-md-4"><p>{{ $b->post_title }}</p></li>
+						<li class="col-md-4"><a href="bands/band-page/{{ $b->ID }}">{{ $b->post_title }}</a></li>
 							@endif
 						@endforeach
 					</ul>
