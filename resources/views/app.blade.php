@@ -64,7 +64,7 @@
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav">
 					<li><a href="/shows">Shows</a></li>
-					<li><a href="/bands">Bands</a></li>
+					<li><a href="/bands/archive">Bands</a></li>
 					<li><a href="/contact">Contact</a></li>
 					<li><a href="/about">About</a></li>
 					<li><a href="/studio">Studio</a></li>

@@ -17,7 +17,7 @@ Route::get('home', 'HomeController@index');
 
 Route::get('shows', 'ShowsController@index');
 
-Route::get('bands', 'BandsController@index');
+Route::get('bands/archive', 'BandsController@index');
 Route::get('bands/band-page/{id}', 'BandsController@show_band_page');
 
 Route::get('contact', 'ContactController@index');

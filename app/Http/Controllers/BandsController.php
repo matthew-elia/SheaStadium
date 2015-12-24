@@ -16,7 +16,7 @@ class BandsController extends Controller {
 	public function index()
 	{
 		$bands = Band::orderBy('post_title', 'ASC')->get();
-		return view('bands')->with(compact('bands'));
+		return view('bands.archive')->with(compact('bands'));
 	}
 
 	/**
