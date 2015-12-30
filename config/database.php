@@ -62,7 +62,7 @@ return [
 		'mysql' => [
 			'driver'    => 'mysql',
 			'host'      => $host,
-			'database'  => $database,
+			'database'  => 'shea',
 			'username'  => $username,
 			'password'  => $password,
 			'charset'   => 'utf8',
