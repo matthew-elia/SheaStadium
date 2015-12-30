@@ -21,7 +21,7 @@
 
 		@foreach($shows as $show)
 			<div class="page-header">
-			@foreach($show->meta as $sm)
+			@foreach($show->show_meta as $sm)
 				@if($sm->meta_key === 'show_date')
 				<p>{{ $sm->meta_value }}</p>
 				@endif
@@ -31,7 +31,7 @@
 			<ul class="list-unstyled">
 				<li>
 					<h2>{{ $show->show_title }}</h2>
-					@foreach($show->meta as $sm)
+					@foreach($show->show_meta as $sm)
 						@if($sm->meta_key === 'doors_at')
 						<p>Doors at: {{ $sm->meta_value }}</p>
 						@endif

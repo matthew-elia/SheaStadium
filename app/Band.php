@@ -6,4 +6,10 @@ class Band extends Model {
 
 	protected $table = 'bands';
 
+
+	 public function band_meta()
+	{
+	    return $this->hasMany('App\BandMetadata');
+	}
+
 }

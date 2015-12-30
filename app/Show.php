@@ -6,7 +6,7 @@ class Show extends Model {
 
 	protected $table = 'shows';
 
-	 public function meta()
+	 public function show_meta()
 	{
 	    return $this->hasMany('App\ShowMetadata');
 	}

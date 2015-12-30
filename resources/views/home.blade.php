@@ -15,7 +15,7 @@
 						
 				<div class="col-md-3" style="padding:0px">
 					@foreach($shows as $show)
-						@foreach($show->meta as $sm)
+						@foreach($show->show_meta as $sm)
 							@if($sm->meta_key === 'show_date')	
 							<div class="well" style="height:120px;background-color:black;">
 								<p style="text-decoration:underline;margin-bottom:0;">{{ $sm->meta_value }}</p>

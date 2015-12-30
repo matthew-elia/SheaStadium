@@ -3,7 +3,7 @@
 use Illuminate\Database\Eloquent\Model;
 
 class ShowMetadata extends Model {
-
+	
 	protected $table = 'show_meta';
 
 	function show() {
