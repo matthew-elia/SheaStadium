@@ -18,7 +18,6 @@ class ShowsController extends Controller {
 	public function index()
 	{	
 		$shows = Show::orderBy('post_date', 'DESC')->simplePaginate(5);
-		$shows = $shows->reverse();
 		// DATES
 		$today = Carbon::today()->formatLocalized('%A %B %d');
 		$yesterday = Carbon::now()->subDay()->formatLocalized('%A %B %d');
