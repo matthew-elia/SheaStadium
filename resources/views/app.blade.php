@@ -39,11 +39,15 @@
 		position:static;
 		top:50px;
 		bottom:0;
-		overflow-y:scroll;
+		overflow-y:hidden;
 	}
 	footer {
 		padding:40px 0px;
 		background:rgba(0,0,0,1);
+	}
+	.well {
+		padding: 10px;
+		margin-bottom: 10px;
 	}
 
 	</style>
