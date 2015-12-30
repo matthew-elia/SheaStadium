@@ -10,6 +10,7 @@
 
 	<!-- Fonts -->
 	<link href='//fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -20,6 +21,7 @@
 	<style>
 	html, body {
 		height: 100%;
+		font-family: 'Oswald';
 	}
 	body {
 		background: url( {{ asset('/images/home-bg.jpg') }}) top left no-repeat fixed;
@@ -29,8 +31,12 @@
 		background-color: rgba(0,0,0,0);
 		border:none;
 	}
+	* {
+		font-family: 'Oswald';
+	}
 	h1,h2,h3,h4,h5,h6,p,a,label {
 		color:white !important;
+		font-family: 'Oswald'
 	}
 	.container {
 		background-color: rgba(0,0,0,0.8);
