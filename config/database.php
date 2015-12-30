@@ -61,7 +61,7 @@ return [
 
 		'mysql' => [
 			'driver'    => 'mysql',
-			'host'      => $host,
+			'host'      => 'us-cdbr-east.cleardb.com',
 			'database'  => $database,
 			'username'  => $username,
 			'password'  => $password,
