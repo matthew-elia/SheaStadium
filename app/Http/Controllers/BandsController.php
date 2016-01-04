@@ -27,7 +27,7 @@ class BandsController extends Controller {
 	public function show_band_page($id)
 	{
 		$band = Band::findOrFail($id);
-		// dd($band);
+
 		return view('bands.band-page')->with(compact('band'));
 	}
 

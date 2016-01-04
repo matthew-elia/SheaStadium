@@ -56,6 +56,10 @@
 		margin-bottom: 10px;
 	}
 
+	#twitter-widget-0 {
+		float: right;
+	}
+
 	</style>
 </head>
 <body>
@@ -121,8 +125,8 @@
 					Check out our tracks, recorded live and uploaded to soundcloud</p>
 				</div>
 				<div class="col-md-4">
-					<div class="page-header" style="margin-top:0;">
-						<p>Tweets</p>
+					<div class="row">
+						<a class="twitter-timeline" href="https://twitter.com/sheastadiumbk" data-widget-id="684049932630802432">Tweets by @sheastadiumbk</a>
 					</div>
 				</div>
 				<div class="col-md-4">
@@ -150,5 +154,10 @@
 	<!-- Scripts -->
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>
+	
+	<!-- Twitter Follow -->
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+	<!-- Twitter Timeline -->
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 </body>
 </html>
